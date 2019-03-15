@@ -1,0 +1,31 @@
+{
+  "name": "test-automation",
+  "version": "1.0.0",
+  "description": "simple test automation project",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "test": "cucumber-js --require dist/stepDefinition/",
+    "start": "npm run build && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MalpaBajpai/automation.git"
+  },
+  "author": "Malpa Bajpai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MalpaBajpai/automation/issues"
+  },
+  "homepage": "https://github.com/MalpaBajpai/automation#readme",
+  "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/runtime": "^7.3.4",
+    "config": "^3.0.1",
+    "cucumber": "^5.1.0",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  }
+}

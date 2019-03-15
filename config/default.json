@@ -1,0 +1,6 @@
+{
+  "browser": "chrome",
+  "url":{
+      "appUrl": "http://localhost:3000/"
+  }
+}
