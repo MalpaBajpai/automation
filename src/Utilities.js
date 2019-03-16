@@ -76,34 +76,7 @@ class Utilities {
       return await driver.findElements(By.css(selector));
     }
 
-    static async isDisplayed(timeout = 5000) {
-        const webElement =await (this.initializeWebElement(
-            
-            timeout,
-        ));
-
-        webElement.isDisplay();
-    }
-
-    static async isVisible(selector, locatorMethod = 'css', timeout = 5000) {
-        const webElement =await (this.initializeWebElement(
-            selector,
-            locatorMethod,
-            timeout,
-        ));
-
-        webElement.isVisible(selector);
-    }
-
-    static async selectByVisibleText(selector, value, locatorMethod = 'css', timeout = 5000) {
-        const webElement = await (this.initializeWebElement(
-            selector,
-            locatorMethod,
-            timeout,
-        ));
-
-        webElement.sendKeys(value);
-    }
+    
 }
 
 export default Utilities;

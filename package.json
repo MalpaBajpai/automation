@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d dist",
-    "test": "cucumber-js --require dist/stepDefinition/",
+    "test": "cucumber-js --require dist/stepDefinition/ --tags @Weather_check",
     "start": "npm run build && npm run test"
   },
   "repository": {

@@ -1,12 +1,13 @@
-import { Given,Before,After } from 'cucumber';
+import { Given,Before,After, setDefaultTimeout } from 'cucumber';
 import Utilities from '../Utilities';
 
 
-Before(() => {
-    Utilities.initDriver();
+Before(async() => {
+    await Utilities.initDriver();
+    //setDefaultTimeout(60000);
 });
 
 After(() => {
-    //Utilities.quitDriver();
+    Utilities.quitDriver();
 });
 
